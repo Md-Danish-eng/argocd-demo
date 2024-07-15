@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-app-container
-        image: nginx:latest  # Replace with your new image
+        image: nginx:latest 
         ports:
         - containerPort: 80
         volumeMounts:
@@ -25,5 +25,5 @@ spec:
       volumes:
       - name: log-volume
         persistentVolumeClaim:
-          claimName: log-pvc  # Name of the PVC
+          claimName: log-pvc
 
